@@ -23,7 +23,7 @@ const Inventario = () => {
         };
 
         fetchProductos();
-    }, []);
+    }, [productos]);
 
     // Manejo de envío del formulario
     const handleSubmit = async (e) => {
