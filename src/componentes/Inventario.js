@@ -16,6 +16,7 @@ const Inventario = () => {
             try {
                 const response = await axios.get('http://localhost:9000/listainventario/inventario')
                 setProductos(response.data);
+                console.log(productos)
             } catch (error) {
                 console.error("Error al cargar productos", error);
             }
