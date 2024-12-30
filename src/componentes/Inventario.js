@@ -102,7 +102,7 @@ const Inventario = () => {
     };
 
     // Eliminar producto
-    const handleDelete = async (id) => {
+/*     const handleDelete = async (id) => {
         try {
             await axios.delete(`http://localhost:9000/listainventario/inventario/${id}`);
             Swal.fire({
@@ -120,15 +120,15 @@ const Inventario = () => {
                 confirmButtonText: 'Aceptar',
             });
         }
-    };
+    }; */
 
     // Iniciar edición de producto
-    const handleEdit = (producto) => {
+/*     const handleEdit = (producto) => {
         setEditando(producto._id);
         setNombre(producto.nombre);
         setPrecio(producto.precio);
         setCantidad(producto.cantidad);
-    };
+    }; */
 
     return (
         <div className="inventario-container">
