@@ -24,7 +24,7 @@ function Formulario() {
 
         try {
 
-            await axios.post('http://localhost:9000/user/register', {
+            await axios.post(`${process.env.REACT_APP_API_URL_SERVER_POST}`, {
                 nombre,
                 email,
                 password

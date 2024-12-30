@@ -12,7 +12,7 @@ function Usuarios() {
     useEffect(() => {
         const obtenerUsuarios = async () => {
             try {
-                const respuesta = await axios.get('http://localhost:9000/user/');
+                const respuesta = await axios.get(`${process.env.REACT_APP_API_URL_SERVER_GET}`);
                 setUsuarios(respuesta.data);
             } catch (error) {
                 console.error('Error al obtener los usuarios:', error);
@@ -23,7 +23,7 @@ function Usuarios() {
 
     const eliminarUsuario = async (id) => {
         try {
-            const respuesta = await axios.delete(`http://localhost:9000/user/${id}`);
+            await axios.delete(`${process.env.REACT_APP_API_URL_SERVER_DELETE}/${id}`);
             setUsuarios(usuarios.filter(usuario => usuario._id !== id));
         } catch (error) {
             console.error('Error al eliminar el usuario:', error);
