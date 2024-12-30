@@ -1,0 +1,26 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3e8ff; 
+  color: #4b0082; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ /*  height: 100vh; */ 
+}
+
+/* Container Styles */
+.inventario-container {
+  background-color: #e0c3fc; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+}

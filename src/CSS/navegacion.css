@@ -1,0 +1,41 @@
+/* Estilos para la navegación */
+nav {
+  background-color: #4b0082; /* Indigo oscuro */
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 100vw;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #e0d6f3; /* Violeta claro */
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  color: #ffffff; /* Blanco */
+  background-color: #7a5cff; /* Violeta brillante */
+}
+
+nav ul li a:active {
+  background-color: #a98df6; /* Lila pastel */
+}
+
+/* Opcional: Personalización del enlace activo */
